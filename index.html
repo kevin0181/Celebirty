@@ -108,17 +108,76 @@
                     <button
                         type="button"
                         class="btn btn-outline-info"
-                        onclick="location.href='index.html'"
+                        data-toggle="modal"
+                        data-target="#restartButton"
                     >
                         다시하기
                     </button>
+                    <div
+                        class="modal fade"
+                        id="restartButton"
+                        tabindex="-1"
+                        role="dialog"
+                        aria-labelledby="exampleModalLabel"
+                        aria-hidden="true"
+                        style="display: none;"
+                    >
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel">
+                                        다시하시겠습니까?
+                                    </h5>
+                                    <button
+                                        type="button"
+                                        class="close"
+                                        data-dismiss="modal"
+                                        aria-label="Close"
+                                    >
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <ins
+                                        class="kakao_ad_area"
+                                        style="display: none;"
+                                        data-ad-unit="DAN-1h7leqzl85wzd"
+                                        data-ad-width="300"
+                                        data-ad-height="250"
+                                    ></ins>
+                                    <script
+                                        type="text/javascript"
+                                        src="//t1.daumcdn.net/kas/static/ba.min.js"
+                                        async
+                                    ></script>
+                                </div>
+                                <div class="modal-footer">
+                                    <button
+                                        type="button"
+                                        class="btn btn-secondary"
+                                        data-dismiss="modal"
+                                    >
+                                        Close
+                                    </button>
+                                    <button
+                                        type="button"
+                                        class="btn btn-primary"
+                                        onclick="location.href='index.html'"
+                                    >
+                                        Restart
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
                     <!-- Button share modal -->
                     <button
                         type="button"
                         class="btn btn-outline-dark"
                         data-toggle="modal"
                         data-target="#exampleModal"
-						onclick="shareClick()"
+                        onclick="shareClick()"
                     >
                         공유하기
                     </button>
@@ -260,9 +319,9 @@
                     predict();
                 });
             }
-			// function shareClick(){
-			// 	$('.kakao_ad_area').show();
-			// }
+            // function shareClick(){
+            // 	$('.kakao_ad_area').show();
+            // }
         </script>
 
         <script type="text/javascript">
