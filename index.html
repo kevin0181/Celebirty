@@ -95,6 +95,7 @@
             </div>
             <div class="file-upload-content">
                 <img class="file-upload-image" id="face-image" src="#" alt="your image" />
+				<div id="Cele_image" class="Cele_image"></div>
                 <div id="label-container"></div>
                 <div class="mt-5 image-title-wrap">
                     <button type="button" onclick="start()" class="btn btn-outline-secondary">
@@ -287,6 +288,7 @@
                         $('.file-upload-content').show();
                         $('.btn-outline-info').hide();
                         $('.btn-outline-dark').hide();
+                        $('.Cele_image').hide();
                     };
                     reader.readAsDataURL(input.files[0]);
                 } else {
@@ -367,8 +369,30 @@
                     '님을 ' +
                     Math.ceil(maxPeak.probability * 100) +
                     '% 만큼이나 닮으셨네요!!';
+				var cele_image = document.getElementById("Cele_image");
+				
+                switch (maxPeak.className) {
+                    case "블랙핑크 제니":
+                        cele_image.setAttribute("src","image/1.jpg");
+						cele_image.setAttribute("width","200px");
+						cele_image.setAttribute("height","200px");
+						cele_image.setAttribute("alt","연예인 사진");
+						cele_image.appendChild(document.createElement('img'));
+                        break;
+                    case "김고은":
+                        cele_image.setAttribute("src","image/2.jpg");
+						cele_image.setAttribute("width","200px");
+						cele_image.setAttribute("height","200px");
+						cele_image.setAttribute("alt","연예인 사진");
+						cele_image.appendChild(document.createElement('img'));
+                        break;
+                    default:
+                    // code block
+                }
+
                 $('#Progress_Loading').hide();
                 $('.overlay').hide();
+                $('.Cele_image').show();
                 labelContainer.childNodes[0].innerHTML = classPrediction;
 
                 // for (let i = 0; i < maxPredictions; i++) {
