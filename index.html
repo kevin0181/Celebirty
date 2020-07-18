@@ -95,7 +95,7 @@
             </div>
             <div class="file-upload-content">
                 <img class="file-upload-image" id="face-image" src="#" alt="your image" />
-				<div id="Cele_image" class="Cele_image"></div>
+                <img id="Cele_image" class="Cele_image" />
                 <div id="label-container"></div>
                 <div class="mt-5 image-title-wrap">
                     <button type="button" onclick="start()" class="btn btn-outline-secondary">
@@ -369,22 +369,365 @@
                     '님을 ' +
                     Math.ceil(maxPeak.probability * 100) +
                     '% 만큼이나 닮으셨네요!!';
-				var cele_image = document.getElementById("Cele_image");
-				
+                var cele_image = document.getElementById('Cele_image');
+
                 switch (maxPeak.className) {
-                    case "블랙핑크 제니":
-                        cele_image.setAttribute("src","image/1.jpg");
-						cele_image.setAttribute("width","200px");
-						cele_image.setAttribute("height","200px");
-						cele_image.setAttribute("alt","연예인 사진");
-						cele_image.appendChild(document.createElement('img'));
+                    case '블랙핑크 제니':
+                        cele_image.setAttribute('src', 'image/1.jpg');
+                        cele_image.setAttribute('width', '200px');
+                        cele_image.setAttribute('height', '200px');
+                        cele_image.setAttribute('alt', '연예인 사진');
+                        cele_image.appendChild(document.createElement('img'));
                         break;
-                    case "김고은":
-                        cele_image.setAttribute("src","image/2.jpg");
-						cele_image.setAttribute("width","200px");
-						cele_image.setAttribute("height","200px");
-						cele_image.setAttribute("alt","연예인 사진");
-						cele_image.appendChild(document.createElement('img'));
+                    case '김고은':
+                        cele_image.setAttribute('src', 'image/2.jpg');
+                        cele_image.setAttribute('width', '200px');
+                        cele_image.setAttribute('height', '200px');
+                        cele_image.setAttribute('alt', '연예인 사진');
+                        cele_image.appendChild(document.createElement('img'));
+                        break;
+                    case '김소현':
+                        cele_image.setAttribute('src', 'image/3.jpg');
+                        cele_image.setAttribute('width', '200px');
+                        cele_image.setAttribute('height', '200px');
+                        cele_image.setAttribute('alt', '연예인 사진');
+                        cele_image.appendChild(document.createElement('img'));
+                        break;
+                    case '김유정':
+                        cele_image.setAttribute('src', 'image/4.jpg');
+                        cele_image.setAttribute('width', '200px');
+                        cele_image.setAttribute('height', '200px');
+                        cele_image.setAttribute('alt', '연예인 사진');
+                        cele_image.appendChild(document.createElement('img'));
+                        break;
+                    case '김지원':
+                        cele_image.setAttribute('src', 'image/5.jpg');
+                        cele_image.setAttribute('width', '200px');
+                        cele_image.setAttribute('height', '200px');
+                        cele_image.setAttribute('alt', '연예인 사진');
+                        cele_image.appendChild(document.createElement('img'));
+                        break;
+                    case '김태희':
+                        cele_image.setAttribute('src', 'image/6.jpg');
+                        cele_image.setAttribute('width', '200px');
+                        cele_image.setAttribute('height', '200px');
+                        cele_image.setAttribute('alt', '연예인 사진');
+                        cele_image.appendChild(document.createElement('img'));
+                        break;
+                    case '레드벨벳 슬기':
+                        cele_image.setAttribute('src', 'image/7.jpg');
+                        cele_image.setAttribute('width', '200px');
+                        cele_image.setAttribute('height', '200px');
+                        cele_image.setAttribute('alt', '연예인 사진');
+                        cele_image.appendChild(document.createElement('img'));
+                        break;
+                    case '레드벨벳 아이린':
+                        cele_image.setAttribute('src', 'image/8.jpg');
+                        cele_image.setAttribute('width', '200px');
+                        cele_image.setAttribute('height', '200px');
+                        cele_image.setAttribute('alt', '연예인 사진');
+                        cele_image.appendChild(document.createElement('img'));
+                        break;
+                    case 'SF9 로운':
+                        cele_image.setAttribute('src', 'image/9.jpg');
+                        cele_image.setAttribute('width', '200px');
+                        cele_image.setAttribute('height', '200px');
+                        cele_image.setAttribute('alt', '연예인 사진');
+                        cele_image.appendChild(document.createElement('img'));
+                        break;
+                    case 'ITZY 류진':
+                        cele_image.setAttribute('src', 'image/10.jpg');
+                        cele_image.setAttribute('width', '200px');
+                        cele_image.setAttribute('height', '200px');
+                        cele_image.setAttribute('alt', '연예인 사진');
+                        cele_image.appendChild(document.createElement('img'));
+                        break;
+                    case '박보영':
+                        cele_image.setAttribute('src', 'image/11.jpg');
+                        cele_image.setAttribute('width', '200px');
+                        cele_image.setAttribute('height', '200px');
+                        cele_image.setAttribute('alt', '연예인 사진');
+                        cele_image.appendChild(document.createElement('img'));
+                        break;
+                    case '박신혜':
+                        cele_image.setAttribute('src', 'image/12.jpg');
+                        cele_image.setAttribute('width', '200px');
+                        cele_image.setAttribute('height', '200px');
+                        cele_image.setAttribute('alt', '연예인 사진');
+                        cele_image.appendChild(document.createElement('img'));
+                        break;
+                    case 'EXO 백현':
+                        cele_image.setAttribute('src', 'image/13.jpg');
+                        cele_image.setAttribute('width', '200px');
+                        cele_image.setAttribute('height', '200px');
+                        cele_image.setAttribute('alt', '연예인 사진');
+                        cele_image.appendChild(document.createElement('img'));
+                        break;
+                    case 'TXT 범규':
+                        cele_image.setAttribute('src', 'image/14.jpg');
+                        cele_image.setAttribute('width', '200px');
+                        cele_image.setAttribute('height', '200px');
+                        cele_image.setAttribute('alt', '연예인 사진');
+                        cele_image.appendChild(document.createElement('img'));
+                        break;
+                    case 'BTS 뷔':
+                        cele_image.setAttribute('src', 'image/15.jpg');
+                        cele_image.setAttribute('width', '200px');
+                        cele_image.setAttribute('height', '200px');
+                        cele_image.setAttribute('alt', '연예인 사진');
+                        cele_image.appendChild(document.createElement('img'));
+                        break;
+                    case '블랙핑크 지수':
+                        cele_image.setAttribute('src', 'image/16.jpg');
+                        cele_image.setAttribute('width', '200px');
+                        cele_image.setAttribute('height', '200px');
+                        cele_image.setAttribute('alt', '연예인 사진');
+                        cele_image.appendChild(document.createElement('img'));
+                        break;
+                    case '설인아':
+                        cele_image.setAttribute('src', 'image/17.jpg');
+                        cele_image.setAttribute('width', '200px');
+                        cele_image.setAttribute('height', '200px');
+                        cele_image.setAttribute('alt', '연예인 사진');
+                        cele_image.appendChild(document.createElement('img'));
+                        break;
+                    case 'EXO 세훈':
+                        cele_image.setAttribute('src', 'image/18.jpg');
+                        cele_image.setAttribute('width', '200px');
+                        cele_image.setAttribute('height', '200px');
+                        cele_image.setAttribute('alt', '연예인 사진');
+                        cele_image.appendChild(document.createElement('img'));
+                        break;
+                    case '송혜교':
+                        cele_image.setAttribute('src', 'image/19.jpg');
+                        cele_image.setAttribute('width', '200px');
+                        cele_image.setAttribute('height', '200px');
+                        cele_image.setAttribute('alt', '연예인 사진');
+                        cele_image.appendChild(document.createElement('img'));
+                        break;
+                    case 'TXT 수빈':
+                        cele_image.setAttribute('src', 'image/20.jpg');
+                        cele_image.setAttribute('width', '200px');
+                        cele_image.setAttribute('height', '200px');
+                        cele_image.setAttribute('alt', '연예인 사진');
+                        cele_image.appendChild(document.createElement('img'));
+                        break;
+                    case '수지':
+                        cele_image.setAttribute('src', 'image/21.jpg');
+                        cele_image.setAttribute('width', '200px');
+                        cele_image.setAttribute('height', '200px');
+                        cele_image.setAttribute('alt', '연예인 사진');
+                        cele_image.appendChild(document.createElement('img'));
+                        break;
+                    case 'BTS 슈가':
+                        cele_image.setAttribute('src', 'image/22.jpg');
+                        cele_image.setAttribute('width', '200px');
+                        cele_image.setAttribute('height', '200px');
+                        cele_image.setAttribute('alt', '연예인 사진');
+                        cele_image.appendChild(document.createElement('img'));
+                        break;
+                    case '신민아':
+                        cele_image.setAttribute('src', 'image/23.jpg');
+                        cele_image.setAttribute('width', '200px');
+                        cele_image.setAttribute('height', '200px');
+                        cele_image.setAttribute('alt', '연예인 사진');
+                        cele_image.appendChild(document.createElement('img'));
+                        break;
+                    case '신혜선':
+                        cele_image.setAttribute('src', 'image/24.jpg');
+                        cele_image.setAttribute('width', '200px');
+                        cele_image.setAttribute('height', '200px');
+                        cele_image.setAttribute('alt', '연예인 사진');
+                        cele_image.appendChild(document.createElement('img'));
+                        break;
+                    case '아이유':
+                        cele_image.setAttribute('src', 'image/25.jpg');
+                        cele_image.setAttribute('width', '200px');
+                        cele_image.setAttribute('height', '200px');
+                        cele_image.setAttribute('alt', '연예인 사진');
+                        cele_image.appendChild(document.createElement('img'));
+                        break;
+                    case '아이즈원 김민주':
+                        cele_image.setAttribute('src', 'image/26.jpg');
+                        cele_image.setAttribute('width', '200px');
+                        cele_image.setAttribute('height', '200px');
+                        cele_image.setAttribute('alt', '연예인 사진');
+                        cele_image.appendChild(document.createElement('img'));
+                        break;
+                    case 'TXT 연준':
+                        cele_image.setAttribute('src', 'image/27.jpg');
+                        cele_image.setAttribute('width', '200px');
+                        cele_image.setAttribute('height', '200px');
+                        cele_image.setAttribute('alt', '연예인 사진');
+                        cele_image.appendChild(document.createElement('img'));
+                        break;
+                    case '오마이걸 아린':
+                        cele_image.setAttribute('src', 'image/28.jpg');
+                        cele_image.setAttribute('width', '200px');
+                        cele_image.setAttribute('height', '200px');
+                        cele_image.setAttribute('alt', '연예인 사진');
+                        cele_image.appendChild(document.createElement('img'));
+                        break;
+                    case '우주소녀 루다':
+                        cele_image.setAttribute('src', 'image/29.jpg');
+                        cele_image.setAttribute('width', '200px');
+                        cele_image.setAttribute('height', '200px');
+                        cele_image.setAttribute('alt', '연예인 사진');
+                        cele_image.appendChild(document.createElement('img'));
+                        break;
+                    case '유인나':
+                        cele_image.setAttribute('src', 'image/30.jpg');
+                        cele_image.setAttribute('width', '200px');
+                        cele_image.setAttribute('height', '200px');
+                        cele_image.setAttribute('alt', '연예인 사진');
+                        cele_image.appendChild(document.createElement('img'));
+                        break;
+                    case 'BTOB 성재':
+                        cele_image.setAttribute('src', 'image/31.jpg');
+                        cele_image.setAttribute('width', '200px');
+                        cele_image.setAttribute('height', '200px');
+                        cele_image.setAttribute('alt', '연예인 사진');
+                        cele_image.appendChild(document.createElement('img'));
+                        break;
+                    case '윤아':
+                        cele_image.setAttribute('src', 'image/32.jpg');
+                        cele_image.setAttribute('width', '200px');
+                        cele_image.setAttribute('height', '200px');
+                        cele_image.setAttribute('alt', '연예인 사진');
+                        cele_image.appendChild(document.createElement('img'));
+                        break;
+                    case '이성경':
+                        cele_image.setAttribute('src', 'image/33.jpg');
+                        cele_image.setAttribute('width', '200px');
+                        cele_image.setAttribute('height', '200px');
+                        cele_image.setAttribute('alt', '연예인 사진');
+                        cele_image.appendChild(document.createElement('img'));
+                        break;
+                    case 'NCT 재민':
+                        cele_image.setAttribute('src', 'image/34.jpg');
+                        cele_image.setAttribute('width', '200px');
+                        cele_image.setAttribute('height', '200px');
+                        cele_image.setAttribute('alt', '연예인 사진');
+                        cele_image.appendChild(document.createElement('img'));
+                        break;
+                    case 'NCT 재현':
+                        cele_image.setAttribute('src', 'image/35.jpg');
+                        cele_image.setAttribute('width', '200px');
+                        cele_image.setAttribute('height', '200px');
+                        cele_image.setAttribute('alt', '연예인 사진');
+                        cele_image.appendChild(document.createElement('img'));
+                        break;
+                    case '전지현':
+                        cele_image.setAttribute('src', 'image/36.jpg');
+                        cele_image.setAttribute('width', '200px');
+                        cele_image.setAttribute('height', '200px');
+                        cele_image.setAttribute('alt', '연예인 사진');
+                        cele_image.appendChild(document.createElement('img'));
+                        break;
+                    case 'BTS 정국':
+                        cele_image.setAttribute('src', 'image/37.jpg');
+                        cele_image.setAttribute('width', '200px');
+                        cele_image.setAttribute('height', '200px');
+                        cele_image.setAttribute('alt', '연예인 사진');
+                        cele_image.appendChild(document.createElement('img'));
+                        break;
+                    case 'BTS 제이홉':
+                        cele_image.setAttribute('src', 'image/38.jpg');
+                        cele_image.setAttribute('width', '200px');
+                        cele_image.setAttribute('height', '200px');
+                        cele_image.setAttribute('alt', '연예인 사진');
+                        cele_image.appendChild(document.createElement('img'));
+                        break;
+                    case '조보아':
+                        cele_image.setAttribute('src', 'image/39.jpg');
+                        cele_image.setAttribute('width', '200px');
+                        cele_image.setAttribute('height', '200px');
+                        cele_image.setAttribute('alt', '연예인 사진');
+                        cele_image.appendChild(document.createElement('img'));
+                        break;
+                    case 'BTS 지민':
+                        cele_image.setAttribute('src', 'image/40.jpg');
+                        cele_image.setAttribute('width', '200px');
+                        cele_image.setAttribute('height', '200px');
+                        cele_image.setAttribute('alt', '연예인 사진');
+                        cele_image.appendChild(document.createElement('img'));
+                        break;
+                    case 'BTS 진':
+                        cele_image.setAttribute('src', 'image/41.jpg');
+                        cele_image.setAttribute('width', '200px');
+                        cele_image.setAttribute('height', '200px');
+                        cele_image.setAttribute('alt', '연예인 사진');
+                        cele_image.appendChild(document.createElement('img'));
+                        break;
+                    case 'ASTRO 차은우':
+                        cele_image.setAttribute('src', 'image/42.jpg');
+                        cele_image.setAttribute('width', '200px');
+                        cele_image.setAttribute('height', '200px');
+                        cele_image.setAttribute('alt', '연예인 사진');
+                        cele_image.appendChild(document.createElement('img'));
+                        break;
+                    case '트와이스 나연':
+                        cele_image.setAttribute('src', 'image/43.jpg');
+                        cele_image.setAttribute('width', '200px');
+                        cele_image.setAttribute('height', '200px');
+                        cele_image.setAttribute('alt', '연예인 사진');
+                        cele_image.appendChild(document.createElement('img'));
+                        break;
+                    case '트와이스 사나':
+                        cele_image.setAttribute('src', 'image/44.jpg');
+                        cele_image.setAttribute('width', '200px');
+                        cele_image.setAttribute('height', '200px');
+                        cele_image.setAttribute('alt', '연예인 사진');
+                        cele_image.appendChild(document.createElement('img'));
+                        break;
+                    case '한지민':
+                        cele_image.setAttribute('src', 'image/45.jpg');
+                        cele_image.setAttribute('width', '200px');
+                        cele_image.setAttribute('height', '200px');
+                        cele_image.setAttribute('alt', '연예인 사진');
+                        cele_image.appendChild(document.createElement('img'));
+                        break;
+                    case '휴닝카이':
+                        cele_image.setAttribute('src', 'image/46.jpg');
+                        cele_image.setAttribute('width', '200px');
+                        cele_image.setAttribute('height', '200px');
+                        cele_image.setAttribute('alt', '연예인 사진');
+                        cele_image.appendChild(document.createElement('img'));
+                        break;
+                    case '권지용':
+                        cele_image.setAttribute('src', 'image/47.jpg');
+                        cele_image.setAttribute('width', '200px');
+                        cele_image.setAttribute('height', '200px');
+                        cele_image.setAttribute('alt', '연예인 사진');
+                        cele_image.appendChild(document.createElement('img'));
+                        break;
+                    case '박명수':
+                        cele_image.setAttribute('src', 'image/48.jpg');
+                        cele_image.setAttribute('width', '200px');
+                        cele_image.setAttribute('height', '200px');
+                        cele_image.setAttribute('alt', '연예인 사진');
+                        cele_image.appendChild(document.createElement('img'));
+                        break;
+                    case '유재석':
+                        cele_image.setAttribute('src', 'image/49.jpg');
+                        cele_image.setAttribute('width', '200px');
+                        cele_image.setAttribute('height', '200px');
+                        cele_image.setAttribute('alt', '연예인 사진');
+                        cele_image.appendChild(document.createElement('img'));
+                        break;
+						 case '크러쉬':
+                        cele_image.setAttribute('src', 'image/50.jpg');
+                        cele_image.setAttribute('width', '200px');
+                        cele_image.setAttribute('height', '200px');
+                        cele_image.setAttribute('alt', '연예인 사진');
+                        cele_image.appendChild(document.createElement('img'));
+                        break;
+						 case '태연':
+                        cele_image.setAttribute('src', 'image/51.jpg');
+                        cele_image.setAttribute('width', '200px');
+                        cele_image.setAttribute('height', '200px');
+                        cele_image.setAttribute('alt', '연예인 사진');
+                        cele_image.appendChild(document.createElement('img'));
                         break;
                     default:
                     // code block
