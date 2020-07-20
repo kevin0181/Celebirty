@@ -110,7 +110,7 @@
                     accept="image/*"
                 />
                 <div class="drag-text">
-                    <h3>Upload Image</h3>
+                    <h3>Upload Image(클릭)</h3>
                 </div>
             </div>
             <div class="file-upload-content">
@@ -261,6 +261,7 @@
                 </div>
             </div>
         </div>
+		<div class="warning mt-5" style="" >사용하신 사진 데이터는 서버에 저장되지 않으니 안심하고 사용하세요.</div>
         <!-- 광고 -->
         <div id="ad-banner" class="mt-5">
             <ins
@@ -309,6 +310,7 @@
                         $('.btn-outline-info').hide();
                         $('.btn-outline-dark').hide();
                         $('.Cele_image').hide();
+						$('.warning').hide();
                     };
                     reader.readAsDataURL(input.files[0]);
                 } else {
